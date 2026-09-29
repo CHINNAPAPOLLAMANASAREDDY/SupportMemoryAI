@@ -30,8 +30,8 @@ from agent.support_agent import (
 # =========================================================
 
 st.set_page_config(
-    page_title="SupportMemory AI",
-    page_icon="🧠",
+    page_title="MIMI",
+    page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -336,7 +336,7 @@ def classify_memory(memory):
         return "Customer Context", "👤"
 
 
-    return "Customer Memory", "🧠"
+    return "Customer Memory", "🤖"
 
 
 def memory_reason(category):
@@ -477,7 +477,7 @@ def load_customer_memory():
 
 with st.sidebar:
 
-    st.title("🧠 SupportMemory AI")
+    st.title("🤖 MIMI")
 
     st.caption(
         "Persistent AI customer-support intelligence"
@@ -584,7 +584,7 @@ with st.sidebar:
 
 
     if st.button(
-        "🧠 Load Customer Memory",
+        "🤖 Load Customer Memory",
         use_container_width=True,
     ):
 
@@ -595,7 +595,7 @@ with st.sidebar:
             if load_customer_memory():
 
                 st.toast(
-                    f"🧠 Loaded {selected_customer}'s memory"
+                    f"🤖 Loaded {selected_customer}'s memory"
                 )
 
                 st.rerun()
@@ -629,7 +629,7 @@ with st.sidebar:
 # =========================================================
 
 st.title(
-    "🧠 SupportMemory AI"
+    "🤖 MIMI"
 )
 
 st.caption(
@@ -649,7 +649,7 @@ with header1:
 with header2:
 
     st.info(
-        "🧠 Persistent memory"
+        "🤖 Persistent memory"
     )
 
 with header3:
@@ -727,7 +727,7 @@ with profile_right:
 st.divider()
 
 st.subheader(
-    f"🧠 What Hindsight Remembers About {selected_customer}"
+    f"🤖 What Hindsight Remembers About {selected_customer}"
 )
 
 st.caption(
@@ -896,7 +896,7 @@ st.subheader(
 )
 
 st.caption(
-    "Enter a customer issue and let SupportMemory AI "
+    "Enter a customer issue and let MIMI"
     "recall history before generating a response."
 )
 
@@ -1149,7 +1149,7 @@ if ask_button:
 
 
             st.toast(
-                "🧠 Hindsight recalled and learned from the interaction!"
+                "🤖 Hindsight recalled and learned from the interaction!"
             )
 
 
@@ -1428,7 +1428,7 @@ with impact_col:
     if st.session_state.last_response:
 
         st.success(
-            "🧠 Personalization Active"
+            "🤖 Personalization Active"
         )
 
         st.caption(
@@ -1739,7 +1739,7 @@ with tab_analytics:
 
 
     st.subheader(
-        "🧠 Memory Distribution"
+        "🤖 Memory Distribution"
     )
 
 
@@ -1779,7 +1779,7 @@ with tab_analytics:
             )
 
             st.metric(
-                "🧠 Other Memories",
+                "🤖 Other Memories",
                 analytics_counts["Customer Memory"],
             )
 
@@ -1921,7 +1921,7 @@ st.divider()
 
 st.caption(
 
-    "🧠 SupportMemory AI • Persistent AI Customer Support "
+    "🤖 MIMI • Persistent AI Customer Support "
     "• Powered by Hindsight + Streamlit"
 
 )
