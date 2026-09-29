@@ -140,3 +140,27 @@ Clear the payment app cache and retry.
 
 Future interaction:
 MIMI can recall this successful troubleshooting step.
+---
+
+# 📁 Project Structure
+
+```text
+SupportMemoryAI/
+│
+├── app/
+│   └── dashboard.py
+│
+├── agent/
+│   └── support_agent.py
+│
+├── data/
+│   └── customer_data.py
+│
+├── utils/
+│   └── hindsight_service.py
+│
+├── .env
+├── .gitignore
+├── requirements.txt
+├── main.py
+└── README.md
